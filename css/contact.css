@@ -1,0 +1,260 @@
+html {
+	background-color: black;
+}
+.debug {
+	border: 3px solid red;
+}
+
+.contact-nav {
+	position: fixed;
+	top: 0;
+	height: 50px;
+	width: 100%;
+}
+
+.contact-nav-stripes {
+	transform: rotate(-90deg);
+	color: white;
+	display: inline-block;
+	float: right;
+	margin-right: 50px;
+	font-size: 34px;
+}
+
+.contact-nav-stripes:hover {
+	color: teal;
+	transition: 1s ease;
+	cursor: pointer;
+}
+
+.contact-content {
+	width: 80%;
+	margin: auto;
+	height: 70vh;
+	margin-top: 15vh;
+	text-align: right;
+	font-family: 'Poiret One', cursive;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.contact-content h2 {
+	font-size: 28px;
+	letter-spacing: 4px;
+}
+
+.contact-content h4 {
+	font-size: 22px;
+}
+
+.content-half {
+	width:44%;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 40px;
+}
+
+.contact-blue-letter {
+	color: teal;
+	font-weight: bold;
+}
+
+.content-half img {
+	height: 100%;
+	width: 80%;
+}
+.box {
+	width: 300px;
+	height: 300px;
+	margin: auto;
+}
+
+/*////////////////////dropbutton//////////////////////////*/
+#contact-dropdownbtn {
+  font-size: 17px; 
+  border: 2px solid teal;
+  color: white;
+  text-align: right;
+  width: 170px;
+  background-color: rgba(0,0,0,0);
+  color: teal;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  padding: 14px 16px;
+  letter-spacing: 2px;
+}
+
+a {
+	text-decoration: none;
+	color:white;
+}
+
+.contact-dropdown-content {
+  font-family: 'Poiret One', cursive;
+  display: none;
+  background-color: rgba(0,0,0,0);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: right;
+}
+
+.contact-dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  color: white;
+  font-family: 'Poiret One', cursive;
+}
+
+.contact-topnav a:hover, .contact-dropdown:hover .contact-dropbtn {
+  transition: 0.7s ease;
+  color: teal;
+}
+
+.contact-dropdown-content a:hover {
+	transition: 0.7s ease;
+  	color: teal;
+}
+
+.contact-dropdown:hover .contact-dropdown-content {
+  display: block;
+}
+
+.contact-tealtxt {
+	color: teal;
+}
+
+#contact-brand {
+	color: white;
+	padding: 20px;
+	font-size: 24px;
+	display: inline-block;
+}
+
+#contact-brand a:hover {
+	color: #fc8123;
+	transition: 1.5s ease;
+}
+
+/*/////////////////////////services//////////////////////////*/
+.services-container {
+	width: 70%;
+	text-align: center;
+	margin: auto;
+	animation: servicefadein 1.5s forwards;
+	opacity: 0;
+}
+
+.services-pics {
+	width: 90%;
+	text-align: center;
+	margin: auto;
+	height: 50vh;
+	animation: servicefadein 2s forwards;
+	opacity: 0;
+	animation-delay: 0.5s;
+}
+
+.service-logo {
+	display: inline-block;
+	padding: 20px 30px 10px 30px;
+}
+
+.service-logo:after {
+	display: block;
+	content: '';
+	border-bottom: 2px solid teal;
+	transform: scaleX(0);
+	transition: transform 1s ease;
+}
+
+.service-logo:hover:after {
+	display: block;
+	content: '';
+	border-bottom: 2px solid teal;
+	transform: scaleX(0.6);
+	transition: transform 1s ease;
+}
+.service-logo img {
+	max-width: 150px;
+	max-height: 200px;
+}
+
+.blue-line {
+	border-top: 2px solid teal;
+	width: 50px;
+	margin: auto;
+	margin-top:0;
+}
+
+.services-container h3 {
+	margin: 10px;
+}
+
+@keyframes servicefadein {
+0% {transform: translate(0,100%); opacity:0;}
+100%{transform: translate(0,0);opacity: 1;}
+}
+
+#contactNavFs {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	color: black;
+	background-color: black;
+	z-index: 1;
+	transform: translate(0,-100%);
+}
+
+.contactNavFs-container {
+	text-transform: uppercase;
+	text-decoration: none;
+	height: 70vh;
+	width: 60vw;
+	margin: auto;
+	padding-top: 15vh;
+	text-align: center;
+	margin-top: 10vh;
+	box-sizing: border-box;
+
+}
+
+.contactNavFs-container a {
+	display: block;
+	text-decoration: none;
+	font-size: 36px;
+	padding: 10px;
+
+}
+
+.contactNavFs-container a:hover {
+	color: teal;
+	transition: 1.5s ease;
+}
+
+.footer-left {
+	position: absolute;
+	left: 50px;
+	bottom: 80px;
+}
+
+.footer-mid {
+	left: 40vw;
+	position: absolute;
+}
+
+.footer-right {
+	position: absolute;
+	right: 50px;
+}
+
+#contactFooter {
+	position: fixed;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	color: teal;
+}

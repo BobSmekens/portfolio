@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>projects</title>
+	<link rel="stylesheet" type="text/css" href="..\css\portfolio.css">
+	<script type="text/javascript" src="C:\Users\Gebruiker\Desktop\codegorilla\portfolio\portfolio\js\portfolio.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Karla|Libre+Baskerville|Nunito+Sans|Shadows+Into+Light" rel="stylesheet">
+</head>
+<body>
+
+
+<div id="tracker"></div>
+	<!---------------------------------navbar--------------------->
+<div class="navbar">
+	<div id="navbarContainer">
+		<!--<h2>BOB |<Span class="text-blue"> FOLIO</Span></h2>-->
+		
+		<div class="navbar-links">
+
+			<div class="dropdown">
+				<a href="contact.html"><button class="dropbtn">contact.</button></a>
+			</div>
+				   
+				    
+			<div class="dropdown">
+				<button class="dropbtn">projects.</button>
+				<div class="dropdown-content">
+				      <a href="#techstyle">Techstyle</a>
+				      <a href="#blissworld">Blissworld</a>
+				      <a href="#braber">Braber</a>
+				      <a href="#api">A.P.I.</a>
+				      <a href="#algolia">Algolia</a>
+				      <a href="#symodd">Symodd</a>
+
+				</div>
+			</div>
+				    
+				   
+				<div class="dropdown">
+				<a href="portfolio.html"><button class="dropbtn">home.</button></a>				  
+				</div> 
+			</div>
+		</div>
+	</div>
+
+	
+	<!----------------------fullscreen navbar---------------->
+	
+
+
+<div class="fullscreen-nav" id="fsnav">
+			
+			<div class="fullscreen-nav-col" id="fsnav-col-1">
+				
+				<a href="portfolio.html">
+					<div class="black-fadein"><h2 class="fsnavtext" id="fsnavtext1">About <br> BOB | FOLIO.</h2></div>
+				</a>
+				<h2 class="fsnavtext" id="fsnavtext1">About <br> <span class="text-orange">BOB |</span> <span class="text-blue">FOLIO.</span></h2>
+				
+			</div>
+
+			<div class="fullscreen-nav-col" id="fsnav-col-2">
+				
+				<a href="projects.html">
+					<div class="black-fadein"><h2 class="fsnavtext" id="fsnavtext2">Projects.</h2></div>
+				</a>
+				<h2 class="fsnavtext" id="fsnavtext2">Projects.</h2>
+
+			</div>
+
+			<div class="fullscreen-nav-col" id="fsnav-col-3">
+				
+				<a href="portfolio.html"><div class="black-fadein"><h2 class="fsnavtext" id="fsnavtext3">Contact.</h2></div>
+				</a>
+				<h2 class="fsnavtext" id="fsnavtext3">Contact.</h2>
+
+			</div>
+
+				<div class="fullscreen-nav-nav">
+					
+					 <span id="nav-logo" class="nav-logo" onclick="slideNav()">||||</span>
+					
+				</div>
+
+</div>
+
+
+
+
+<!-------------------------------guide bar-------------------------->
+	<div class="mywork-container">
+		<p id="mywork">My work</p><br>
+		<a href="projects.html"><span class="mywork active" id="mywork1" onclick="showAll()">All</span></a>
+		<span class="mywork" id="mywork2" onclick="showDesigns()">Design</span>
+		<span class="mywork" id="mywork3" onclick="showMarketing()">Marketing</span>
+		<span class="mywork" id="mywork4" onclick="showWebshops()">Webshops</span>
+
+	</div>
+
+
+<!-------------------------------------------projects-------------------------------------
+	<div class="pic-containers pic-container1 design" id="projects">
+		<div class="filler-div"></div>
+		<div class="project-container ">
+			<div class="pic-title1" id="techstyle"> 1. Techstyle: <br> (assymetric design, moving elements, dropdown navbar)</div>
+			<div class="pic-img1"> <a href="file:///C:/Users/Gebruiker/Desktop/codegorilla/thuisstudie%20project/portfolio/techstyle/html/techstyle.html" target="_blank"><img class="piclinks" src="..\techstyle.png"></a></div>
+		</div>
+	</div>
+
+	<div class="pic-containers pic-container2 webshops">
+		<div class="filler-div"></div>
+		<div class="project-container ">
+			<div class="pic-img2"> <a href="file:///C:/Users/Gebruiker/Desktop/codegorilla/thuisstudie%20project/portfolio/quicky/html/quicky.html" target="_blank"><img class="piclinks" src="..\blissworld.png"></a></div>
+			<div class="pic-title2" id="blissworld">(webshop, click-sliders)<br> 2. Blissworld: </div>
+		</div>
+	</div>
+
+	<div class="pic-containers pic-container1 marketing">
+		<div class="filler-div"></div>
+		<div class="project-container ">
+			<div class="pic-title1"> 3. Braber: <br> (usabillity, auto-slider, changing comments)</div>
+			<div class="pic-img1" id="braber"><a href="file:///C:/Users/Gebruiker/Desktop/codegorilla/thuisstudie%20project/portfolio/hackathon/mobi/html/mobi.html" target="_blank"><img class="piclinks" src="..\braber.png"></a> </div>
+		</div>
+	</div>
+
+	<div class="pic-containers pic-container2 webshops">
+		<div class="filler-div"></div>
+		<div class="project-container">
+			<div class="pic-img2"><a href="file:///C:/Users/Gebruiker/Desktop/codegorilla/thuisstudie%20project/week3/api.html" target="_blank"><img class="piclinks" src="..\api.png"></a> </div>
+			<div class="pic-title2" id="api"> 4. A.P.I.: <br> (color schemes, click-slider)</div>
+		</div>
+	</div>
+
+	<div class="pic-containers pic-container1 marketing">
+		<div class="filler-div"></div>
+		<div class="project-container">
+			<div class="pic-title1" id="algolia"> 5. Algolia: <br> (search machine, color-blocks)</div>
+			<div class="pic-img1"><a href="file:///C:/Users/Gebruiker/Desktop/codegorilla/thuisstudie%20project/week3/algolia.html" target="_blank"><img class="piclinks" src="..\algolia.png"></a> </div>
+		</div>
+	</div>
+
+	<div class="pic-containers pic-container2 design">
+		<div class="filler-div"></div>
+		<div class="project-container">
+			<div class="pic-img2"> <a href="file:///C:/Users/Gebruiker/Desktop/codegorilla/thuisstudie%20project/week3/newwave1.html" target="_blank"><img class="piclinks" src="..\symmod.png"></a></div>
+			<div class="pic-title2" id="symodd"> 6. Symodd: <br>(color-schemes, minimalistic navbar, loading-image-changer, section scrolling)</div>
+		</div>
+	</div>-->
+
+	<div class="slide-container">
+		<div class="sliderProjects"><h2>project</h2></div>
+		<div class="sliderProjects"><h2>project</h2></div>
+		<div class="sliderProjects"><h2>project</h2></div>
+		<div class="sliderProjects"><h2>project</h2></div>
+		<div class="sliderProjects"><h2>project</h2></div>
+		<div class="sliderProjects"><h2>project</h2></div>
+	</div>
+
+	<!-----------------------------------footer---------------------------------->
+
+</body>
+</html>
