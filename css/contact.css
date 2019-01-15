@@ -31,7 +31,7 @@ html {
 	width: 80%;
 	margin: auto;
 	height: 70vh;
-	margin-top: 15vh;
+	margin-top: 20vh;
 	text-align: right;
 	font-family: 'Poiret One', cursive;
 	letter-spacing: 2px;
@@ -198,51 +198,14 @@ a {
 100%{transform: translate(0,0);opacity: 1;}
 }
 
-#contactNavFs {
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	color: black;
-	background-color: black;
-	z-index: 1;
-	transform: translate(0,-100%);
-}
-
-.contactNavFs-container {
-	text-transform: uppercase;
-	text-decoration: none;
-	height: 70vh;
-	width: 60vw;
-	margin: auto;
-	padding-top: 15vh;
-	text-align: center;
-	margin-top: 10vh;
-	box-sizing: border-box;
-
-}
-
-.contactNavFs-container a {
-	display: block;
-	text-decoration: none;
-	font-size: 36px;
-	padding: 10px;
-
-}
-
-.contactNavFs-container a:hover {
-	color: teal;
-	transition: 1.5s ease;
-}
-
 .footer-left {
 	position: absolute;
 	left: 50px;
-	bottom: 80px;
+	bottom: 30px;
 }
 
 .footer-mid {
-	left: 40vw;
+	left: 30vw;
 	position: absolute;
 }
 
@@ -254,7 +217,8 @@ a {
 #contactFooter {
 	position: fixed;
 	bottom: 0;
-	height: 100px;
-	width: 100%;
+	right: 0;
+	height: 50px;
+	width: 93%;
 	color: teal;
 }

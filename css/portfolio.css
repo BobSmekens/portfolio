@@ -36,13 +36,16 @@ font-family: 'Nunito Sans', sans-serif;
   text-decoration: none;
   color: white;
   display: inline-block;
+  position: absolute;
   box-sizing: border-box;
-  margin: -10px 0 0 120px;
+  margin: 20px 0 0 150px;
+  animation: fadeinblack 2s forwards 2s 
   z-index: 10;
 } 
 
 #branding:hover {
   color: #fc8123;
+  transition: 1s;
 }
 
 .navbar {
@@ -264,6 +267,7 @@ font-family: 'Nunito Sans', sans-serif;
   padding-left: 12%;
   color: grey;
   font-weight: bold;
+  margin-top: 15vh;
 }
 
 
@@ -275,7 +279,7 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 .mywork {
-  padding: 30px 30px 40px 30px;
+  padding: 10px 30px 20px 30px;
   display: inline-block;
   opacity: 0;
   letter-spacing: 2px;
@@ -320,8 +324,89 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 /*///////////////////////////////////////projects//////////////////////////////////////*/
+.project-container {
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto 0 auto;
+  position: absolute;
+  right: 100px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, pink, teal);
+  background-size: cover;
+}
+
+.text-container {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.pic-container {
+  display: inline-block;
+  width: 70%;
+  padding-top: 5vh;
+}
+
+.pic-container:hover {
+  transform: translate(0,-15px);
+  transition: 1s ease;
+}
+
+.project-container-pic {
+  height: 45vh;
+  width: 70%;
+  padding: 20px;
+  display: none;
+  background-image: linear-gradient(to bottom, pink, teal);
+  background-size: cover;
+  opacity: 0;
+  animation: fadein-pic 2s forwards;
+}
+
+@keyframes fadein-pic {
+  0% {opacity: 0}
+  100%{opacity: 1}
+}
+
+.project-container img {
+  width: 100%;
+  height: auto;
+}
+
+.projects-btn-container {
+  height: 50px;
+  width: 95%;
+  right: 0;
+  position: absolute;
+  bottom: 50px;
+}
+
+#projects-slider-left {
+  position: absolute;
+  left: 50px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  color: teal;
+  
+}
+
+.rotate-btn {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+#projects-slider-right {
+  position: absolute;
+  right: 50px;
+
+  font-size: 20px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  color: teal;
+}
 .active {
-  color: white;
+  display: inline-block;
 }
 
 .filler-div {
@@ -451,12 +536,5 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 /*?///////////////////////////////////slider//////////////////////////////*/
-.slider-container{
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
 
-.sliderProjects {
-    display: inline-block;
-  }
+
