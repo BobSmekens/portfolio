@@ -1,5 +1,5 @@
 window.addEventListener("mousemove", mouseCoords);
-window.addEventListener("click", logMouseCoords);
+//window.addEventListener("click", logMouseCoords);
 window.addEventListener("mousemove", updateOffset);
 
 var contentBox = document.getElementById("contactContent");
@@ -11,13 +11,14 @@ function mouseCoords(event) {
   mousex = event.pageX;
   mousey = event.pageY;
 }
-
+/*
 function logMouseCoords () {
 	var mousex = event.pageX;
   	var mousey = event.pageY;
 	console.log(mousex);
 	console.log(mousey);
 }
+*/
 
 var offsetLeft =0;
 var offsetTop = 0;

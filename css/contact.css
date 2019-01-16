@@ -31,7 +31,7 @@ html {
 	width: 80%;
 	margin: auto;
 	height: 70vh;
-	margin-top: 20vh;
+	margin-top: ;
 	text-align: right;
 	font-family: 'Poiret One', cursive;
 	letter-spacing: 2px;
@@ -164,7 +164,7 @@ a {
 .service-logo {
 	display: inline-block;
 	padding: 20px 30px 10px 30px;
-	filter: invert(100%);
+	
 	color: teal;
 }
 
@@ -186,6 +186,7 @@ a {
 .service-logo img {
 	max-width: 150px;
 	max-height: 200px;
+	filter: invert(100%);
 }
 
 .blue-line {
@@ -244,4 +245,26 @@ a {
 	0%{opacity: 0}
 	50% {opacity: 0}
 	100% {opacity:1}
+}
+
+#fishBlub3 {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background-color: white;
+	
+	text-align: center;
+	top: 0;
+	left:0;
+	right:0;
+	bottom:0;
+
+}
+
+#fishBlub3 img {
+	display: inline-block;
+	width: 60vh;
+	height: 60vh;
+	position: relative;
 }
