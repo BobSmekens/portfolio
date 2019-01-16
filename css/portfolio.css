@@ -5,6 +5,10 @@ html {
   overflow-x: hidden;
 }
 
+button {
+  outline: none;
+}
+
 body {
   margin: -10px -10px 0 -10px;
   color: white;
@@ -245,22 +249,44 @@ font-family: 'Nunito Sans', sans-serif;
   border-radius: 50%;
 }
 
-
-
 @keyframes fadeinbottom {
   0%{transform: translate(0, 15px); opacity: 0;}
   100%{transform: translate(0, 0); opacity: 1;}
 }
-.section1  {
-  padding: 25vh 0 15vh 0;
+
+.section1 {
+  margin: 25vh auto 0 auto;
+  width: 80%;
+  height: 50vh;
 }
 
-.section1 h2 {
-  width: 60%;
-  padding-left: 15vw;
-  margin-top: 10vh;
-  font-size: 48px;
+
+.section1-left {
+  width: 48%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  font-size: 28px;
+  font-family: 'Nunito Sans', sans-serif;
+  padding-top: 15vh;
+  
 }
+
+
+.section1-right {
+  float: right;
+  height: 100%;
+  width: 48%;
+  position: relative;
+}
+.fish3 {
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  filter: invert(100%);
+}
+
+
 /*/////////////////////mywork////////////////////////////////////////*/
 .mywork-container {
   width: 100%;
@@ -339,17 +365,19 @@ font-family: 'Nunito Sans', sans-serif;
   display: block;
   width: 100%;
   text-align: center;
+  background-color: rgba(0,0,0,0;)
 }
 
 .pic-container {
   display: inline-block;
   width: 70%;
   padding-top: 5vh;
+ 
 }
 
 .pic-container:hover {
-  transform: translate(0,-15px);
-  transition: 1s ease;
+  transform: translate(0,-10px);
+  transition: 1.5s ease;
 }
 
 .project-container-pic {
@@ -357,7 +385,7 @@ font-family: 'Nunito Sans', sans-serif;
   width: 70%;
   padding: 20px;
   display: none;
-  background-image: linear-gradient(to bottom, pink, teal);
+  background-color: rgba(0,0,0,0);
   background-size: cover;
   opacity: 0;
   animation: fadein-pic 2s forwards;
@@ -388,7 +416,7 @@ font-family: 'Nunito Sans', sans-serif;
   background-color: rgba(0,0,0,0);
   border: none;
   color: teal;
-  
+  outline: none;
 }
 
 .rotate-btn {
@@ -399,7 +427,7 @@ font-family: 'Nunito Sans', sans-serif;
 #projects-slider-right {
   position: absolute;
   right: 50px;
-
+  outline: none;
   font-size: 20px;
   background-color: rgba(0,0,0,0);
   border: none;
@@ -477,10 +505,6 @@ font-family: 'Nunito Sans', sans-serif;
   transition: 1s ease;
   transform: translate(0,-10px);
   }
-
-.piclinks {
-
-}
 
 /*///////////////////////////////////select links/////////////////////*/
 

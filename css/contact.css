@@ -63,6 +63,10 @@ html {
 	height: 100%;
 	width: 80%;
 }
+
+.fish-img {
+	filter: invert(100%);
+}
 .box {
 	width: 300px;
 	height: 300px;
@@ -160,6 +164,7 @@ a {
 .service-logo {
 	display: inline-block;
 	padding: 20px 30px 10px 30px;
+	filter: invert(100%);
 }
 
 .service-logo:after {
@@ -221,4 +226,20 @@ a {
 	height: 50px;
 	width: 93%;
 	color: teal;
+	opacity: 0;
+	animation: fadeinfooter 5s;
+	animation-fill-mode: forwards;
+}
+
+
+
+#contactFooter a:hover {
+	color: teal;
+	transition: 1s ease;
+}
+
+@keyframes fadeinfooter {
+	0%{opacity: 0}
+	50% {opacity: 0}
+	100% {opacity:1}
 }

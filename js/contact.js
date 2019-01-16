@@ -34,11 +34,3 @@ function updateOffset() {
 	
 }
 
-var contactStripes1 = document.getElementById("contactStripes1");
-document.getElementById("contactStripes1").addEventListener("click",showContactNav);
-
-function showContactNav() {
-	var contactFsnav = document.getElementById("contactNavFs");
-	contactFsnav.style.transform = "translate(0,0)";
-}
-
