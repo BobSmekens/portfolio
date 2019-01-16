@@ -83,3 +83,16 @@ function changeTopNav() {
 	 	}
 };
 
+var fishCount = 1;
+
+function fishBlub () {
+	var fish = document.getElementById("blub-txt");
+	
+if (fishCount == 0){
+	fish.style.display = "none";
+	fishCount = 1;
+} else {
+	fish.style.display = "block";
+	fishCount = 0;
+}	
+}

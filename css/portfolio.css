@@ -64,6 +64,9 @@ font-family: 'Nunito Sans', sans-serif;
   z-index: 3;
   transform: translate(0,-15px);
   animation: fadeinbottom 2s forwards 0.8s;
+  animation-name: fadeinbottom;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
   opacity: 0;
 }
 
@@ -256,8 +259,25 @@ font-family: 'Nunito Sans', sans-serif;
 
 .section1 {
   margin: 25vh auto 0 auto;
-  width: 80%;
+  width: 70%;
   height: 50vh;
+}
+
+#blub-txt {
+  position: absolute;
+  right: 0;
+  color: teal;
+  font-size: 28px;
+  border-radius: 40%;
+  background-color: white;
+  padding: 20px;
+  display: none;
+  animation: blubfadein 1s forwards;
+  opacity: 0;
+}
+
+@keyframes blubfadein {
+  100% {opacity: 1}
 }
 
 
@@ -279,11 +299,12 @@ font-family: 'Nunito Sans', sans-serif;
   width: 48%;
   position: relative;
 }
-.fish3 {
+#fish3 {
   height: 100%;
   width: 100%;
   position:absolute;
   filter: invert(100%);
+ 
 }
 
 
@@ -357,7 +378,7 @@ font-family: 'Nunito Sans', sans-serif;
   position: absolute;
   right: 100px;
   text-align: center;
-  background-image: linear-gradient(to bottom, pink, teal);
+  
   background-size: cover;
 }
 
@@ -370,19 +391,19 @@ font-family: 'Nunito Sans', sans-serif;
 
 .pic-container {
   display: inline-block;
-  width: 70%;
+  width: 80%;
   padding-top: 5vh;
  
 }
 
-.pic-container:hover {
-  transform: translate(0,-10px);
+.project-container-pic:hover {
+  transform: scaleY(1.2) scaleX(1.2);
   transition: 1.5s ease;
 }
 
 .project-container-pic {
   height: 45vh;
-  width: 70%;
+  width: 80%;
   padding: 20px;
   display: none;
   background-color: rgba(0,0,0,0);
