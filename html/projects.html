@@ -3,9 +3,10 @@
 
 <head>
 	<title>projects</title>
+	<link rel="stylesheet" type="text/css" href="..\css\contact.css">
 	<link rel="stylesheet" type="text/css" href="..\css\portfolio.css">
-	<script type="text/javascript" src="C:\Users\Gebruiker\Desktop\codegorilla\portfolio\portfolio\js\portfolio.js"></script>
-
+	<script type="text/javascript" src="..\js\contact.js"></script>
+	<script type="text/javascript" src="..\js\portfolio.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Karla|Libre+Baskerville|Nunito+Sans|Shadows+Into+Light" rel="stylesheet">
 </head>
 
@@ -40,37 +41,37 @@
 	<!----------------------fullscreen navbar---------------->
 
 	<div class="fullscreen-nav" id="fsnav">
-			<div class="fullscreen-nav-col" id="fsnav-col-1">
-				<a href="projects.html">
-					<div class="black-fadein">
-						<h2 class="fsnavtext" id="fsnavtext1">Projects.</h2>
-					</div>
-				</a>
-				<h2 class="fsnavtext" id="fsnavtext1">Projects.</h2>
-			</div>
-	
-			<div class="fullscreen-nav-col" id="fsnav-col-2">
-				<a href="services.html">
-					<div class="black-fadein">
-						<h2 class="fsnavtext" id="fsnavtext2">Achievements.</h2>
-					</div>
-				</a>
-				<h2 class="fsnavtext" id="fsnavtext2">Achievements.</h2>
-			</div>
-	
-			<div class="fullscreen-nav-col" id="fsnav-col-3">
-				<a href="contact.html">
-					<div class="black-fadein">
-						<h2 class="fsnavtext" id="fsnavtext3">Contact.</h2>
-					</div>
-				</a>
-				<h2 class="fsnavtext" id="fsnavtext3">Contact.</h2>
-			</div>
-	
-			<div class="fullscreen-nav-nav">
-				<span id="nav-logo" class="nav-logo" onclick="slideNav()">&#10569;</span>
-			</div>
+		<div class="fullscreen-nav-col" id="fsnav-col-1">
+			<a href="projects.html">
+				<div class="black-fadein">
+					<h2 class="fsnavtext" id="fsnavtext1">Projects.</h2>
+				</div>
+			</a>
+			<h2 class="fsnavtext" id="fsnavtext1">Projects.</h2>
 		</div>
+
+		<div class="fullscreen-nav-col" id="fsnav-col-2">
+			<a href="services.html">
+				<div class="black-fadein">
+					<h2 class="fsnavtext" id="fsnavtext2">Achievements.</h2>
+				</div>
+			</a>
+			<h2 class="fsnavtext" id="fsnavtext2">Achievements.</h2>
+		</div>
+
+		<div class="fullscreen-nav-col" id="fsnav-col-3">
+			<a href="contact.html">
+				<div class="black-fadein">
+					<h2 class="fsnavtext" id="fsnavtext3">Contact.</h2>
+				</div>
+			</a>
+			<h2 class="fsnavtext" id="fsnavtext3">Contact.</h2>
+		</div>
+
+		<div class="fullscreen-nav-nav">
+			<span id="nav-logo" class="nav-logo" onclick="slideNav()">&#10569;</span>
+		</div>
+	</div>
 
 
 
@@ -78,50 +79,55 @@
 	<div class="mywork-container">
 		<p id="mywork">My work</p><br>
 	</div>
-
-
 	<!-------------------------------------------projects------------------------------------->
 	<div class="project-container">
 		<div class="project-container-pic active">
-			<div class="pic-container"><img src="..\techstyle.png" alt=""></div>	
-			<div class="text-container"><p>Techstyle.</p></div>
-			
+			<div class="pic-container"><img src="..\imgs\techstyle.png" alt=""></div>
+			<div class="text-container">
+				<p>Techstyle.</p>
+			</div>
 		</div>
 
 		<div class="project-container-pic">
-				<div class="pic-container"><img src="..\braber.png" alt=""></div>	
-				<div class="text-container"><p>Braber.</p></div>
+			<div class="pic-container"><img src="..\imgs\braber.png" alt=""></div>
+			<div class="text-container">
+				<p>Braber.</p>
+			</div>
 		</div>
 
 		<div class="project-container-pic ">
-				<div class="pic-container"><img src="..\api.png" alt=""></div>	
-				<div class="text-container"><p>A.P.I.</p></div>
+			<div class="pic-container"><img src="..\imgs\api.png" alt=""></div>
+			<div class="text-container">
+				<p>A.P.I.</p>
+			</div>
 		</div>
 
 		<div class="project-container-pic ">
-				<div class="pic-container"><img src="..\symmod.png" alt=""></div>	
-				<div class="text-container"><p>Symodd.</p></div>
+			<div class="pic-container"><img src="..\imgs\symmod.png" alt=""></div>
+			<div class="text-container">
+				<p>Symodd.</p>
+			</div>
 		</div>
 
 		<div class="project-container-pic ">
-				<div class="pic-container"><img src="..\algolia.png" alt=""></div>	
-				<div class="text-container"><p>Algolia.</p></div>
+			<div class="pic-container"><img src="..\imgs\algolia.png" alt=""></div>
+			<div class="text-container">
+				<p>Algolia.</p>
+			</div>
 		</div>
 
 		<div class="project-container-pic ">
-				<div class="pic-container"><img src="..\blissworld.png" alt=""></div>	
-				<div class="text-container"><p>Blissworld.</p></div>
+			<div class="pic-container"><img src="..\imgs\blissworld.png" alt=""></div>
+			<div class="text-container">
+				<p>Blissworld.</p>
+			</div>
 		</div>
 	</div>
 
 	<div class="projects-btn-container ">
 		<button id="projects-slider-left" onclick="changeSliderProjectMinus()">&#10527 previous</button>
 		<button id="projects-slider-right" onclick="changeSliderProjectPlus()"> next <span class="rotate-btn">&#10527</span></button>
-	
-	
 	</div>
-
-
 	<!-----------------------------------footer---------------------------------->
 	<script type="text/javascript" src="C:\Users\Gebruiker\Desktop\codegorilla\portfolio\portfolio\js\projects.js"></script>
 </body>

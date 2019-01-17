@@ -116,9 +116,12 @@ function feedfish3(){
 }
 
 function fish3 () {
-	console.log(feedfish3count)
+	console.log(feedfish3count);
+	
+	totalCount++;
 	feedfish3();
 	fishBlub();
+	console.log(totalCount);
 }
 
 function fishBlub2 () {
@@ -160,3 +163,15 @@ function fish1 () {
 localStorage.setItem("fishcount", fishCount)
 var cat = localStorage.getItem('myCat'); 
 */
+var totalCount = 0;
+
+
+function setCount() {
+sessionStorage.setItem("sessionCount", totalCount);
+sessionStorage.setItem("lastname", "Smith");
+}
+
+
+function getCount() {
+localStorage.getItem("sessionCount");
+};
