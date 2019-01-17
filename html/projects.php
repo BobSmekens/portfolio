@@ -17,20 +17,20 @@ y	<script src="..\js\portfolio.js"></script>
 
 		<div id="navbarContainer">
 
-			<a href="portfolio.html" id="branding">BOB | <span class="text-blue">FOLIO</span></a>
+			<a href="portfolio.php" id="branding">BOB | <span class="text-blue">FOLIO</span></a>
 
 			<div class="navbar-links">
 				<div class="dropdown">
-					<a href="contact.html"><button class="dropbtn">contact.</button></a>
+					<a href="contact.php"><button class="dropbtn">contact.</button></a>
 				</div>
 
 				<div class="dropdown">
-					<a href="services.html"><button class="dropbtn">achievements.</button></a>
+					<a href="services.php"><button class="dropbtn">achievements.</button></a>
 				</div>
 
 
 				<div class="dropdown">
-					<a href="projects.html"><button class="dropbtn">projects.</button></a>
+					<a href="projects.php"><button class="dropbtn">projects.</button></a>
 				</div>
 			</div>
 		</div>
@@ -41,7 +41,7 @@ y	<script src="..\js\portfolio.js"></script>
 
 	<div class="fullscreen-nav" id="fsnav">
 		<div class="fullscreen-nav-col" id="fsnav-col-1">
-			<a href="projects.html">
+			<a href="projects.php">
 				<div class="black-fadein">
 					<h2 class="fsnavtext" id="fsnavtext1">Projects.</h2>
 				</div>
@@ -50,7 +50,7 @@ y	<script src="..\js\portfolio.js"></script>
 		</div>
 
 		<div class="fullscreen-nav-col" id="fsnav-col-2">
-			<a href="services.html">
+			<a href="services.php">
 				<div class="black-fadein">
 					<h2 class="fsnavtext" id="fsnavtext2">Achievements.</h2>
 				</div>
@@ -59,7 +59,7 @@ y	<script src="..\js\portfolio.js"></script>
 		</div>
 
 		<div class="fullscreen-nav-col" id="fsnav-col-3">
-			<a href="contact.html">
+			<a href="contact.php">
 				<div class="black-fadein">
 					<h2 class="fsnavtext" id="fsnavtext3">Contact.</h2>
 				</div>
