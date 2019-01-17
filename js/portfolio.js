@@ -64,24 +64,7 @@ function showWebshops() {
 }
 
 /*////////////////////////////////projects flex//////////////////////////////*/
-window.addEventListener("scroll", changeTopNav)
 
-var navbtns = document.getElementById("navbarContainer");
-var topTracker = 0;
-
-function changeTopNav() {
-
-	topTracker = document.getElementById("projects").getBoundingClientRect().top;
-
-
-	if (topTracker > 70) {
-		document.getElementById("navbarContainer").style.backgroundColor = "rgba(0,0,0,0)";
-		document.getElementById("navbarContainer").style.transition = "2s";
-	} else {
-		document.getElementById("navbarContainer").style.backgroundColor = "black";
-		document.getElementById("navbarContainer").style.transition = "2s";
-	}
-};
 
 var fishCount = 1;
 var blubCount = 0;
@@ -110,18 +93,18 @@ function feedfish3() {
 		fish.style.transform = "rotate(-180deg)";
 		fish.style.transition = "3s";
 		document.getElementById("blub-txt").innerHTML = "R.I.P.";
+		fish3dead = 1;
 	} else {
 		feedfish3count++;
 	}
 }
 
 function fish3() {
-	console.log(feedfish3count);
-
 	totalCount++;
 	feedfish3();
 	fishBlub();
-	console.log(totalCount);
+	setCount();
+	fishesAreDead ();
 }
 
 function fishBlub2() {
@@ -149,30 +132,63 @@ function feedfish1() {
 		fish.style.transform = "rotate(-180deg)";
 		fish.style.transition = "3s";
 		document.getElementById("blub-txt2").innerHTML = "R.I.P.";
+		fish1dead = 1;
 	} else {
 		feedfish1count++;
 	}
 }
 
 function fish1() {
-	console.log(feedfish1count)
 	totalCount++;
 	feedfish1();
 	fishBlub2();
+	setCount();
+	fishesAreDead ();
 }
 /*
 localStorage.setItem("fishcount", fishCount)
 var cat = localStorage.getItem('myCat'); 
 */
-var totalCount = 0;
-
+var totalCount = sessionStorage.getItem("sessionCount");
 
 function setCount() {
 	sessionStorage.setItem("sessionCount", totalCount);
-	sessionStorage.setItem("lastname", "Smith");
 }
 
+var fish1dead = 0;
+var fish3dead = 0;
+var bossFish = sessionStorage.getItem("bossOn");
 
-function getCount() {
-	localStorage.getItem("sessionCount");
+function fishesAreDead () {
+	if (totalCount >= 20) {
+		alert("fishes are dead");
+		totalCount = 0;
+		var bossFish = 1;
+		sessionStorage.setItem("bossOn", bossFish)
+	}
 };
+
+document.addEventListener("Scroll", showButton);
+
+function showButton () {
+		document.getElementById("finalBtn").style.opacity = 1;
+}
+
+var bossCount = 0;
+
+function feedBossFish () {
+	var bosstext = document.getElementById("boss-txt");
+	bossCount++;
+	if (bossCount == 0) {
+		bosstext.style.display = "none";
+		bossCount = 1;
+	} else {
+		bosstext.style.display = "block";
+		bossCount = 0;
+	}
+}
+
+function bossFishTxt () {
+	var bosstext = document.getElementById("boss-txt")
+	bosstext.innerHTML = "Master Blob, I have failed you";
+}

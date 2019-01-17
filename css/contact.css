@@ -32,7 +32,6 @@ html {
 	width: 80%;
 	margin: auto;
 	height: 70vh;
-	margin-top: ;
 	text-align: right;
 	font-family: 'Poiret One', cursive;
 	letter-spacing: 2px;
@@ -147,18 +146,25 @@ a {
 
 /*/////////////////////////services//////////////////////////*/
 .services-container {
-	width: 70%;
+	width: 80%;
+	padding-top: 5vh;
 	text-align: center;
 	margin: auto;
 	animation: servicefadein 1.5s forwards;
 	opacity: 0;
 }
 
+.services-txt {
+	width: 400px;
+	margin:auto;
+	padding-bottom: 5vh;
+}
+
 .services-pics {
 	width: 90%;
 	text-align: center;
 	margin: auto;
-	height: 50vh;
+	height: 70vh;
 	animation: servicefadein 2s forwards;
 	opacity: 0;
 	animation-delay: 0.5s;
@@ -187,8 +193,8 @@ a {
 }
 
 .service-logo img {
-	max-width: 150px;
-	max-height: 200px;
+	max-width: 200px;
+	max-height: 400px;
 	filter: invert(100%);
 }
 
@@ -281,4 +287,16 @@ a {
 	width: 60vh;
 	height: 60vh;
 	position: relative;
+}
+
+#boss-txt {
+
+	left: 20vw;
+	top: 5vh;
+	background-color: white;
+	border-radius: 20%;
+	color: teal;
+	height: 200px;
+	width: 200px;
+	z-index: 5;
 }

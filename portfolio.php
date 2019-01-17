@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+<?php
 	<div id="tracker"></div>
 	<div id="fishBlub3">
 		<img src="..\imgs\fish4.png" alt="">
@@ -91,7 +91,7 @@
 		</div>
 	</div>
 	</div>
-
+?>
 </body>
 
 </html>

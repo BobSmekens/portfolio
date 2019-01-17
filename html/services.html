@@ -21,7 +21,7 @@
 				</div>
 
 				<div class="dropdown">
-					<a href="services.html"><button class="dropbtn">achievements.</button></a>
+					<a href="services.html"><button class="dropbtn">services.</button></a>
 				</div>
 
 
@@ -46,10 +46,10 @@
 		<div class="fullscreen-nav-col" id="fsnav-col-2">
 			<a href="services.html">
 				<div class="black-fadein">
-					<h2 class="fsnavtext" id="fsnavtext2">Achievements.</h2>
+					<h2 class="fsnavtext" id="fsnavtext2">Services.</h2>
 				</div>
 			</a>
-			<h2 class="fsnavtext" id="fsnavtext2">Achievements.</h2>
+			<h2 class="fsnavtext" id="fsnavtext2">Services.</h2>
 		</div>
 
 		<div class="fullscreen-nav-col" id="fsnav-col-3">
@@ -65,14 +65,18 @@
 			<span id="nav-logo" class="nav-logo" onclick="slideNav()">&#10569;</span>
 		</div>
 	</div>
+	<!--------------------------nav bulbs right---------->
+
+	<div class="nav-right">
+		<a href="#services-section1"><div onclick="showButton()"class="scroll-bulb" id="bulb1"></div></a>
+		<a href="#services-section2"><div onclick="showButton()"class="scroll-bulb" id="bulb2"></div></a>
+		<a href="#services-section3"><div onclick="showButton()" class="scroll-bulb" id="bulb3"></div></a>
+		<a href="#services-section4"><div onclick="showButton()" class="scroll-bulb" id="bulb4"></div></a>
+	</div>
 	<!-------------------------footer-------------------->
 
+
 	<div id="contactFooter" class="">
-		<div class="footer-left">
-			<a href="">FR</a> /
-			<a href="">EN</a> /
-			<a href="">NL</a>
-		</div>
 
 		<div class="footer-right">
 			<a href="">FACEBOOK /</a>
@@ -82,7 +86,7 @@
 	</div>
 	<!------------content----------------------->
 
-	<div class="mywork-container">
+	<div class="mywork-container" id="services-section1">
 		<p id="mywork">My services</p><br>
 	</div>
 	<div class="contact-content" id="contactContent">
@@ -91,40 +95,123 @@
 			<p class="services-txt"> Your wish is my inspiration. Together we can work to make your company look good.</p>
 
 			<div class="services-pics">
-				<a href="">
+				<a href="#services-section2">
 					<div class="service-logo"><img src="..\imgs\branding-mini.png"><br>
 						<p class="services-pics-txt">Branding</p>
 					</div>
 				</a>
-				<a href="">
+				<a href="#services-section3">
 					<div class="service-logo"><img src="..\imgs\website-mini.png"><br>
 						<p class="services-pics-txt">Website</p>
 					</div>
 				</a>
-				<a href="">
+				<a href="#services-section4">
 					<div class="service-logo"><img src="..\imgs\seo-mini.png"><br>
 						<p class="services-pics-txt">Visibility</p>
 					</div>
 				</a>
-				<a href="">
-					<div class="service-logo"><img src="..\imgs\print-mini.png"><br>
-						<p class="services-pics-txt">Print</p>
-					</div>
-				</a>
-				<a href="">
-					<div class="service-logo"><img src="..\imgs\content-mini.png"><br>
-						<p class="services-pics-txt">Contents</p>
-					</div>
-				</a>
-				<a href="">
-					<div class="service-logo"><img src="..\imgs\strategy-mini.png"><br>
-						<p class="services-pics-txt">Digital marketing</p>
-					</div>
-				</a>
-				
+
 			</div>
 		</div>
+
 	</div>
+	<a href="#services-section2">
+		<div class="down-btn1 moveUp" onclick="showButton()">
+			Into the deep<br>
+			&#10507;
+		</div>
+	</a>
+
+	<!------------------section2----------------->
+	<div id="services-section2" class="">
+		<div class="section2-container ">
+			<div class="section2-half-left">
+				<h2>Branding</h2>
+				<p>As a designer I really like to aid people or companies in defining their online identity.</p>
+
+
+			</div>
+			<div class="section2-half-right">
+				<img class="" src="..\imgs\fish4.png" alt="">
+
+			</div>
+		</div>
+		<a href="#services-section3">
+			<div class="down-btn2 moveUp">
+				Deep breath....<br>
+				&#10507;
+			</div>
+		</a>
+
+	</div>
+
+	<!------------------bubbels------------------------->
+	<div class="bubbels-container">
+		<img class="bubbles-size1" src="..\imgs\bubbles1.png" alt="">
+		<img class="bubbles-size2" src="..\imgs\bubbles1.png" alt="">
+	</div>
+	<!---------------------section3--------------------->
+	<div id="services-section3" class="">
+		<div class="section2-container ">
+			<div class="section2-half-left ">
+				<h2>Website</h2>
+				<p>Of course it is actually my job to design and deploy websites.
+					Creating unique, interactive web-content brings me great satisfaction,
+					I would gladly do this for you!
+				</p>
+
+			</div>
+			<div class="section2-half-right ">
+				<img class="" src="..\imgs\fish2.png" alt="">
+
+			</div>
+		</div>
+		<a href="#services-section4">
+			<div class="down-btn3 moveUp">
+				Hope you brought some scuba gear<br>
+				&#10507;
+			</div>
+		</a>
+
+	</div>
+	<!-----------------------------bubbels-------------------------->
+	<div class="bubbels-container">
+		<img class="bubbles-size1" src="..\imgs\bubbles1.png" alt="">
+		<img class="bubbles-size2" src="..\imgs\bubbles1.png" alt="">
+	</div>
+	<!--------------------------section 4---------------------------->
+	<div id="services-section4" class="">
+		<div class="section2-container ">
+			<div class="section2-half-left ">
+				<h2>Visibility</h2>
+				<p>Arguably the most important concept of nowadays webpages.
+					It greatly benefits a website to be actually found on the internet. This is something I can help you with!</p>
+
+			</div>
+			<div class="section2-half-right ">
+				<img class="" src="..\imgs\fish1.png" alt="">
+
+			</div>
+		</div>
+		<a href="#services-section5">
+			<div id="finalBtn">
+				Prepare yourself!<br>
+				&#10507;
+			</div>
+		</a>
+
+	</div>
+	<!----------------------------hidden section------------->
+	<div id="services-section5" class="">
+		<div class="hidden-section-container">
+			<h1>BOSS FISH!!!!!!! dundundun......</h1>
+			<img onclick="bossFishTxt()" src="..\imgs\bossfish.png" alt="">
+			
+		</div>
+		
+	</div>
+
+
 </body>
 
 </html>
