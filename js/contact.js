@@ -11,7 +11,7 @@ function mouseCoords(event) {
 	mousex = event.pageX;
 	mousey = event.pageY;
 }
-/*
+/* log mosuecords
 function logMouseCoords () {
 	var mousex = event.pageX;
   	var mousey = event.pageY;
