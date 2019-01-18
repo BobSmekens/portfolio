@@ -768,3 +768,40 @@ font-family: 'Nunito Sans', sans-serif;
 #bulb5 {
   background-color: gray;
 }
+
+.resume-container {
+  width: 60vw;
+  height: 100vh;
+  text-align: left;
+  padding-top: 15vh;
+  margin: auto;
+}
+
+#resume-btn {
+  color: teal;
+  font-size: 18px;
+}
+
+.resume-block {
+  padding: 10px;
+}
+
+.resume-experiences {
+  font-size: 20px;
+  color: teal;
+}
+
+.resume-left {
+  width: 45%;
+  float: left;
+}
+
+.resume-right {
+  width: 45%;
+  float: right;
+}
+
+.resume-right li {
+  text-decoration: none;
+  padding: 5px;
+}
