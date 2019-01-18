@@ -168,10 +168,11 @@ function fishesAreDead () {
 	}
 };
 
-document.addEventListener("Scroll", showButton);
 
 function showButton () {
+	if (bossFish == 1) {
 		document.getElementById("finalBtn").style.opacity = 1;
+	}
 }
 
 var bossCount = 0;

@@ -288,15 +288,3 @@ a {
 	height: 60vh;
 	position: relative;
 }
-
-#boss-txt {
-
-	left: 20vw;
-	top: 5vh;
-	background-color: white;
-	border-radius: 20%;
-	color: teal;
-	height: 200px;
-	width: 200px;
-	z-index: 5;
-}
