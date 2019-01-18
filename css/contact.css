@@ -1,5 +1,6 @@
 html {
 	background-color: black;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 .debug {
@@ -33,7 +34,7 @@ html {
 	margin: auto;
 	height: 70vh;
 	text-align: right;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Nunito Sans', sans-serif;
 	letter-spacing: 2px;
 	color: white;
 }
@@ -83,7 +84,7 @@ html {
 	width: 170px;
 	background-color: rgba(0, 0, 0, 0);
 	color: teal;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Nunito Sans', sans-serif;
 	font-weight: bold;
 	padding: 14px 16px;
 	letter-spacing: 2px;
@@ -95,7 +96,7 @@ a {
 }
 
 .contact-dropdown-content {
-	font-family: 'Poiret One', cursive;
+	font-family: 'Nunito Sans', sans-serif;
 	display: none;
 	background-color: rgba(0, 0, 0, 0);
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -110,7 +111,7 @@ a {
 	display: block;
 	text-align: right;
 	color: white;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 .contact-topnav a:hover,
